@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "extends": "google",
+  "rules": {
+    "strict": 0,
+    "max-len": [1, { "code": 150 }]
+  }
+}
