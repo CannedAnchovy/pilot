@@ -37,7 +37,9 @@ export default async function main() {
     // leave the one that has middle name
     if (director.firstname_1.trim().includes(' ')) {
       director.hasMiddleName = true;
-      continue;
+      let names = director.firstName.trim().split(' ');
+      director.firstname_1 = names[0];
+      director.middlename = names[1];
     }
 
     // leave the one that is pilot
